@@ -1,0 +1,28 @@
+{
+  "name": "Taurine-intake-calculator-for-cats",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "install-dependencies": 
+    "rm -rf dist elm-stuff node_modules && npm cache clean --force && npm cache verify && pnpm install -g elm && pnpm install",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "elm-format": "^0.8.7",
+    "elm-optimize-level-2": "^0.3.5",
+    "elm-review": "^2.12.0",
+    "elm-test": "0.19.1-revision12",
+    "prettier": "^3.3.3",
+    "prettier-plugin-elm": "^0.11.0",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.0",
+    "vite-plugin-elm": "^3.0.1"
+  },
+  "dependencies": {
+    "postcss": "^8.4.41"
+  }
+}

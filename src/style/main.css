@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('../../public/assets/background.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #212121;
+    font-family: 'Short Stack', cursive;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    #container {
+        width: 68% !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container {
+        width: 84% !important;
+    }
+}
+
+button.physical {
+    @apply bg-orange-900 rounded cursor-pointer outline-offset-4;
+}
+
+input {
+    @apply rounded text-sm bg-orange-100 border-2 border-orange-300 hover:border-orange-400 focus:outline-none focus:ring focus:ring-orange-300/50 focus:border-orange-500 placeholder-orange-800 block w-full p-2;
+}
+
+span.physical {
+    @apply block rounded font-semibold px-2 py-1 -translate-y-[4px] group-active:-translate-y-[1px];
+}
+
+button.physical.primary > span {
+    @apply bg-orange-300 hover:bg-orange-400;
+}
+
+button.physical.secondary > span {
+    @apply bg-orange-100 hover:bg-orange-200;
+}
