@@ -64,7 +64,7 @@ view model =
         , p [] [ text "This calculator is designed for healthy adult cats and provides an approximate estimate of their daily taurine requirement." ]
         , div [ class "flex flex-col justify-start gap-1" ]
             [ label [ class "font-semibold text-sm" ] [ text "Cat's weight" ]
-            , input
+            , div [class "flex flex-row flex-nowrap justify-start gap-2"] [input
                 [ type_ "text"
                 , placeholder "Insert weight"
                 , onInput UpdateWeight
@@ -77,7 +77,8 @@ view model =
                         ""
                     )
                 ]
-                []
+                [], p [ class "h-fit my-auto"] [text " kg"]
+            ]
             , span [ class "font-xs text-red-600 mt-1" ] [ text model.message ]
             ]
         , div [ class "flex flex-col justify-start gap-2" ]
