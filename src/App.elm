@@ -90,7 +90,8 @@ view model =
             , h2 [ class "font-semibold" ] [ text "Minimum intake for a dry diet:" ]
             , p [] [ em [] [ text (R.round 2 model.dryTaurine) ], text " mg of taurine per day" ]
             ]
-        , p [ class "text-sm" ] [ b [] [ text "N.B." ], text "These results are only for guidance. It's always a good idea to check with a trusted veterinarian to make sure your cat is happy and healthy." ]
+        , p [ class "text-sm"] [b [] [text "Source: "],a [ href "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BA66B9E895186245E2B050CC8F3ED14C/S0007114591000843a.pdf/effect_of_dietary_taurine_content_on_the_plasma_taurine_concentration_of_the_cat.pdf",target "_blank", rel "noopener", class "underline text-orange-500 hover:text-orange-600"] [ text "Earle, K. E., & Smith, P. M. (1991). The effect of dietary taurine content on the plasma taurine concentration of the cat. British Journal of Nutrition, 66(2), 227-235." ]]
+        , p [] [ b [] [ text "N.B." ], text "These results are only for guidance. It's always a good idea to check with a trusted veterinarian to make sure your cat is happy and healthy." ]
         , button [ class "group physical secondary", onClick Reset ] [ span [ class "physical" ] [ text "Reset" ] ]
         ]
 
