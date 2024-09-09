@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite + Elm</title>
+        <title>Taurine intake calculator</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,23 @@
                 id="container"
                 class="bg-orange-50 my-0 mx-auto p-4 shadow-heavy rounded-lg h-fit w-[42%]"
             >
-                <div id="app"></div>
+                <div class="flex flex-col justify-start gap-6">
+                    <h1 class="text-2xl font-bold">Taurine intake calculator</h1>
+                    <p>This calculator is designed for healthy adult cats and provides an approximate estimate of their daily taurine requirement.</p>
+                    <div id="app"></div>
+                    <p class="text-sm">
+                        <b>Source:</b>
+                        <a class="underline text-orange-500 hover:text-orange-600" target="_blank" rel="noopener" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BA66B9E895186245E2B050CC8F3ED14C/S0007114591000843a.pdf/effect_of_dietary_taurine_content_on_the_plasma_taurine_concentration_of_the_cat.pdf">
+                            Earle, K. E., & Smith, P. M. (1991). The effect of dietary taurine content on the plasma taurine concentration of the cat. British Journal of Nutrition, 66(2), 227-235.
+                        </a>
+                    </p>
+                    <p>
+                        <b>N.B.</b> These results are only for guidance. It's always a good idea to check with a trusted veterinarian to make sure your cat is happy and healthy.
+                    </p>
+                    <button id="reset-button" class="group physical secondary" onclick="">
+                        <span class="physical">Reset</span>
+                    </button>
+                </div>
             </div>
         </main>
         <div
