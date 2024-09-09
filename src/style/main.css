@@ -12,13 +12,18 @@ body {
     height: 100vh;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
     #container {
-        width: 68% !important;
+        width: 76% !important;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
+    main {
+        justify-content: start !important;
+        padding: 12% 0 !important;
+    }
+
     #container {
         width: 84% !important;
     }
